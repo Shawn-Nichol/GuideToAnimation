@@ -21,9 +21,10 @@ import com.example.guidetoanimation.R;
  */
 public class Fragment1 extends Fragment {
 
+    // TODO: AnimationDrawable.
     AnimationDrawable wifiAnimation;
     View v;
-    AnimationDrawable myAnimation;
+
 
     public Fragment1() {
         // Required empty public constructor
@@ -34,9 +35,11 @@ public class Fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment1, container, false);
 
-
+        // TODO: bind View
         ImageView imageView = v.findViewById(R.id.frag1_image);
+        // TODO: set BackgroundResource
         imageView.setBackgroundResource(R.drawable.animation);
+        // TODO: link imageView to Animation.
         wifiAnimation = (AnimationDrawable) imageView.getBackground();
 
         Button btn = v.findViewById(R.id.frag1_btn);
