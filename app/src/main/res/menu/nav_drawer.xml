@@ -2,8 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_nav_1"
-        android:title="Fragment1"/>
+        android:title="List Animation"/>
     <item
         android:id="@+id/menu_nav_2"
-        android:title="Fragment2"/>
+        android:title="Move View"/>
+
+    <item
+        android:id="@+id/menu_nav_3"
+        android:title="RevealAnimation"/>
+
+    <item
+        android:id="@+id/menu_nav_4"
+        android:title="Fling Animation"/>
 </menu>

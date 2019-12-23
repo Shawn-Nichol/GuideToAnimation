@@ -1,11 +1,9 @@
-package com.example.guidetoanimation.Fragment1;
+package com.example.guidetoanimation.AnimationList;
 
 
-import android.animation.ObjectAnimator;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 
-import androidx.core.widget.ImageViewCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -19,21 +17,21 @@ import com.example.guidetoanimation.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Fragment1 extends Fragment {
+public class ListAnimationFragment extends Fragment {
 
     // TODO: AnimationDrawable.
     AnimationDrawable wifiAnimation;
     View v;
 
 
-    public Fragment1() {
+    public ListAnimationFragment() {
         // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        v = inflater.inflate(R.layout.fragment1, container, false);
+        v = inflater.inflate(R.layout.fragment_list_animation, container, false);
 
         // TODO: bind View
         ImageView imageView = v.findViewById(R.id.frag1_image);

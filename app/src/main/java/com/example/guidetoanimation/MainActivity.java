@@ -13,8 +13,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 
-import com.example.guidetoanimation.Fragment1.Fragment1;
-import com.example.guidetoanimation.Fragment2.Fragment2;
+import com.example.guidetoanimation.AnimationList.ListAnimationFragment;
+import com.example.guidetoanimation.FlingAnimation.FlingFragment;
+import com.example.guidetoanimation.MoveView.MoveViewFragment;
+import com.example.guidetoanimation.RevealAnimation.RevealFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity
     private void loadFragment() {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        Fragment1 fragment = new Fragment1();
+        ListAnimationFragment fragment = new ListAnimationFragment();
         ft.replace(R.id.main_fragment_container, fragment)
                 .addToBackStack(null)
                 .commit();
@@ -65,11 +67,19 @@ public class MainActivity extends AppCompatActivity
         switch(menuItem.getItemId()) {
             case R.id.menu_nav_1:
                 getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
-                        new Fragment1()).commit();
+                        new ListAnimationFragment()).commit();
                 break;
             case R.id.menu_nav_2:
                 getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
-                        new Fragment2()).commit();
+                        new MoveViewFragment()).commit();
+                break;
+            case R.id.menu_nav_3:
+                getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
+                        new RevealFragment()).commit();
+                break;
+            case R.id.menu_nav_4:
+                getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
+                        new FlingFragment()).commit();
                 break;
         }
 
