@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--TODO: Layer Drawable is a drawable object that manages an array of other drawables, each drawable -->
+<!--id drawen in the order of the list. List item is on top.-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--TODO: each Drawable is represented by item. -->
+    <item>
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="90">
+
+
+        </rotate>
+    </item>
+
+</layer-list>

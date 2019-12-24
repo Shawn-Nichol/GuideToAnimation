@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--12:00-->
+    <item
+        android:duration="400">
+        <rotate android:drawable="@drawable/my_line"
+            android:fromDegrees="90">
+        </rotate>
+    </item>
+
+    <!--1:00-->
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="30"/>
+    </item>
+
+    <!--2:00-->
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="60"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="90"/>
+    </item>
+
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="120"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="150"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="180"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="210"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="240"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="270"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="300"/>
+    </item>
+
+    <item
+        android:duration="400">
+        <rotate
+            android:drawable="@drawable/my_line"
+            android:fromDegrees="330"/>
+    </item>
+
+
+
+</layer-list>

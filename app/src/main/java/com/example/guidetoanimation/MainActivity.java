@@ -16,7 +16,9 @@ import android.view.MenuItem;
 import com.example.guidetoanimation.AnimationList.ListAnimationFragment;
 import com.example.guidetoanimation.FlingAnimation.FlingFragment;
 import com.example.guidetoanimation.MoveView.MoveViewFragment;
+import com.example.guidetoanimation.MyShapes.MyShapesFragment;
 import com.example.guidetoanimation.RevealAnimation.RevealFragment;
+import com.example.guidetoanimation.SpringAnimation.SpringFragment;
 import com.example.guidetoanimation.Zoom.ZoomFragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -85,6 +87,16 @@ public class MainActivity extends AppCompatActivity
             case R.id.menu_nav_5:
                 getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
                         new ZoomFragment()).commit();
+                break;
+            case R.id.menu_nav_6:
+                getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
+                        new SpringFragment()).commit();
+                break;
+            case R.id.menu_nav_7:
+                getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,
+                        new MyShapesFragment()).commit();
+                break;
+
         }
 
         mDrawerLayout.closeDrawer(GravityCompat.START);
