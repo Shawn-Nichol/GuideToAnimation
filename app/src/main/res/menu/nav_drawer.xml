@@ -14,4 +14,8 @@
     <item
         android:id="@+id/menu_nav_4"
         android:title="Fling Animation"/>
+
+    <item
+        android:id="@+id/menu_nav_5"
+        android:title="Zoom Animation"/>
 </menu>

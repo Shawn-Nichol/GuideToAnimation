@@ -40,4 +40,7 @@ dependencies {
     // Notification
     implementation 'androidx.core:core:1.0.2'
 
+    // Fling animation
+    implementation "androidx.dynamicanimation:dynamicanimation:1.0.0"
+
 }
